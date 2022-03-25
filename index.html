@@ -31,13 +31,20 @@
         </div>
       </header>
       <main class="mdl-layout__content">
-        <!-- basic text -->
-          <p>Area and perimeter of a rectangle with dimensions 5 cm and 3 cm.</p>
-        <div <id="area">
-          <p>Area = ?</p>
-        <div <id="perimeter">
-          <p>Perimeter = ?</p>
-        </div>
+                <!-- Numeric Textfield -->
+        <form action="#">
+          <p>Salary</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="salary">
+            <label class="mdl-textfield__label" for="salary">Salary...</label>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <p>Hours</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="hours">
+            <label class="mdl-textfield__label" for="hours">Hours ...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+        <div
         <!-- Raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="doMathClicked()">
           Calculate
