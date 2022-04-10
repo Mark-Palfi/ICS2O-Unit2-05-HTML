@@ -31,12 +31,14 @@
         </div>
       </header>
       <main class="mdl-layout__content">
-                <!-- Numeric Textfield -->
+        <!-- Numeric Textfield -->
         <form action="#">
           <p>Salary</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="salary">
             <label class="mdl-textfield__label" for="salary">Salary...</label>
+          </div>
+        </form>      
         <!-- Numeric Textfield -->
         <form action="#">
           <p>Hours</p>
@@ -44,7 +46,8 @@
             <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="hours">
             <label class="mdl-textfield__label" for="hours">Hours ...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
-        <div
+        </div>
+        </form>
         <!-- raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="doMathClicked()">
           Calculate

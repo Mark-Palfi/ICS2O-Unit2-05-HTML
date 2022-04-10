@@ -15,5 +15,5 @@ function enterClicked() {
   document.getElementById('taxes').innerHTML = '<p>taxes =  ' + ("hours" * "salary") * (0.18)) + '</p>'    
   // output
   document.getElementById("address").innerHTML =
-    "You live on: " + street_name + ", house " + street_number + "."
+    "Your salary is: $" + pay + ",you're taxes are $" + taxes + "."
 }
