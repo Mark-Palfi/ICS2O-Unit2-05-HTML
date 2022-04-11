@@ -11,8 +11,8 @@ function enterClicked() {
   const street_number = parseInt(document.getElementById("salary").value)
 
   // math
-    document.getElementById('pay').innerHTML = '<p>pay = ' + ("hours" * "salary") * (1.00 - 0.18) + '</p>'
-  document.getElementById('taxes').innerHTML = '<p>taxes =  ' + ("hours" * "salary") * (0.18)) + '</p>'    
+    document.getElementById('pay').innerHTML = "<p>pay = " + ("hours" * "salary") * (1.00 - 0.18) + "</p>"
+  document.getElementById('taxes').innerHTML = "<p>taxes =  " + ("hours" * "salary") * (0.18) + "</p>"    
   // output
   document.getElementById("address").innerHTML =
     "Your salary is: $" + pay + ",you're taxes are $" + taxes + "."
