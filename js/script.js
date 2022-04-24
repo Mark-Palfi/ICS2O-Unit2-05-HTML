@@ -5,15 +5,20 @@
 /**
  * This function gets users street name and number and shows it back to user.
  */
-function enterClicked() {
+function doMathClicked() {
+  const TAX_RATE = 0.18
+    
   // input
-  const street_name = document.getElementById("hours").value
-  const street_number = parseInt(document.getElementById("salary").value)
+  const hoursWorked = document.getElementById("hours").value
+  const salaryPayed = parseInt(document.getElementById("salary").value)
 
-  // math
-    document.getElementById('pay').innerHTML = "<p>pay = " + ("hours" * "salary") * (1.00 - 0.18) + "</p>"
-  document.getElementById('taxes').innerHTML = "<p>taxes =  " + ("hours" * "salary") * (0.18) + "</p>"    
+  // process
+  const payOfUser = (hoursWorked * salaryPayed) * (1.00 - TAX_RATE)
+  const taxesPayed = (hoursWorked * salaryPayed) * (TAX_RATE)
+ 
   // output
+  document.getElementById('pay').innerHTML = "<p>pay = $" + payOfUser.toFixed(2) + "</p>"
+  document.getElementById('taxes').innerHTML = "<p>taxes = $" + taxesPayed.toFixed(2) + "</p>"   
   document.getElementById("address").innerHTML =
-    "Your salary is: $" + pay + ",you're taxes are $" + taxes + "."
+    "Your salary is: $" + payOfUser.toFixed(2) + ", you're taxes are $" + taxesPayed.toFixed(2) + "."
 }
